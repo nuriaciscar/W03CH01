@@ -61,6 +61,8 @@ for (let i = 0; i < personajes.length; i++) {
 
   const cardTitle = document.createElement("h2");
   cardTitle.classList.add("character__name card-title h4");
+  const textH2 = personajes[i].nombre + "y" + personajes[i].familia;
+  cardTitle.innerHTML = textH2;
   cardDiv.appendChild(cardBody);
 
   const cardInfo = document.createElement("div");
