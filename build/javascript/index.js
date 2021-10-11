@@ -1,16 +1,41 @@
-// const asesor = require("./GoTAsesor");
-// const escudero = require("./GoTEscudero");
-// const luchador = require("./GoTLuchador");
-// const rey = require("./GoTRey");
-// const personajes = require("./GoTPersonajes");
+import asesor from "./GoTAsesor";
+import escudero from "./GoTEscudero";
+import luchador from "./GoTLuchador";
+import rey from "./GoTRey";
+import personajes from "./GoTPersonajes";
 
-// const arrayPersonajes = [joffrey, jaime, daenerys, tyirion, bronn];
+const joffrey = new PersonajeRey("Joffrey", Personajes.familia.arryn, 29, 2);
+const jaime = new PersonajeLuchador(
+  "Jaime",
+  Personajes.familia.stark,
+  45,
+  "AK-47",
+  7
+);
+const daenerys = new PersonajeLuchador(
+  "Daenerys",
+  Personajes.familia.stark,
+  23,
+  "AK",
+  7
+);
+const tyirion = new PersonajeAsesor(
+  "Tyirion",
+  Personajes.familia.stark,
+  32,
+  daenerys
+);
+const bronn = new PersonajeEscudero(
+  "Bronn",
+  Personajes.familia.stark,
+  31,
+  jaime,
+  7
+);
 
-// for (let i =0; i< arrayPersonajes.length; i++){
-//  const familia = getElementsByClassName("character__name card-title h4");
-// }
+const personajes = [joffrey, jaime, daenerys, tyirion, bronn];
 
-function structure() {
+for (let i = 0; i < personajes.length; i++) {
   const container = document.querySelector(".app container");
 
   const card = document.createElement("ul");
@@ -99,9 +124,21 @@ function structure() {
   const comunicationsText = document.createElement("p");
   comunicationsText.classList.add("comunications__text display-1");
   comunications.appendChild(comunicationsText);
+
   const comunicationsImage = document.createElement("img");
   comunicationsImage.classList.add("comunications__text display-1");
   comunications.appendChild(comunicationsImage);
 }
 
-structure();
+// ulInfo.info = (
+//   <style>
+//     <ul class="list-unstyled">
+//       <li>Edad: X años</li>
+//       <li>
+//         Estado:
+//         <i class="fas fa-thumbs-down"></i>
+//         <i class="fas fa-thumbs-up"></i>
+//       </li>
+//     </ul>
+//   </style>
+// );
