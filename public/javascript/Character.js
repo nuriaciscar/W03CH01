@@ -35,7 +35,10 @@ class Character extends Component {
               class="character__picture card-img-top"
             />
             <div class="card-body">
-              <h2 class="character__name card-title h4">`${name} `y` ${family} `</h2>
+
+              <h2 class="character__name card-title h4">${name} "y" ${family} </h2>
+
+
               <div class="character__info">
                 <ul class="list-unstyled">
                   <li>Edad: ${age} años</li>

@@ -1,6 +1,8 @@
 import Character from "./Character";
 
-describe("Given a component class", () => {
+
+describe("Given a character class", () => {
+
   describe("When it receives a parent element, a class name and html tag", () => {
     test("Then it should render a 'li' element with 'character col' class", () => {
       //Arrange
