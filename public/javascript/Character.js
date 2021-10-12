@@ -23,7 +23,7 @@ class Character extends Component {
   }
 
   generateHTML(){
-    const {name,family, age, alive, serie, phrase,image};
+    const {name,family, age, alive, serie, phrase, image};
     this.character;
     const html = 
     `
@@ -35,14 +35,15 @@ class Character extends Component {
               class="character__picture card-img-top"
             />
             <div class="card-body">
-              <h2 class="character__name card-title h4">`${name} + "y" + ${family} `</h2>
+              <h2 class="character__name card-title h4">`${name} "y" ${family} `</h2>
               <div class="character__info">
                 <ul class="list-unstyled">
                   <li>Edad: ${age} años</li>
                   <li>
                     Estado:
-                    <i class="fas fa-thumbs-down"></i>
-                    <i class="fas fa-thumbs-up"></i>
+                    ${
+                      alive ? '<i class="fas fa-thumbs-up"></i>' : '<iclass="fas fa-thumbs-down"></i>'
+                    }
                   </li>
                 </ul>
               </div>
