@@ -2,12 +2,12 @@ class Component {
   element;
   parentElement;
 
-  constructor(parentElement, className, htmlTag = "ul") {
-    this.parentElement = parentElement;
-    this.parentElement.append(this.element);
-
+  constructor(parentElement, className, htmlTag = "li") {
     this.element = document.createElement(htmlTag);
     this.element.className = className;
+
+    this.parentElement = parentElement;
+    this.parentElement.append(this.element);
   }
 }
 

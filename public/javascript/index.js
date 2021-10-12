@@ -3,6 +3,7 @@ import escudero from "./GoTEscudero";
 import luchador from "./GoTLuchador";
 import rey from "./GoTRey";
 import personajes from "./GoTPersonajes";
+import Component from "./component";
 
 const joffrey = new PersonajeRey("Joffrey", Personajes.familia.arryn, 29, 2);
 const jaime = new PersonajeLuchador(
