@@ -1,4 +1,5 @@
 import Component from "./Component";
+
 import personajes from "./GoT";
 import Character from "./Character"
 
@@ -79,3 +80,5 @@ generateHTML(){
 
 
 export default Page;
+
+

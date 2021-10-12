@@ -25,3 +25,5 @@ jaime.morir();
 tyirion.morir();
 console.log(`Jaime vivo ? ${jaime.vivo}`);
 console.log(`Tyirion vivo ? ${tyrion.vivo}`);
+
+export default personajes;
